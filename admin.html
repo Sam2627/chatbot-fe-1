@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Đại Học Y Dược Cần Thơ</title>
+    <link rel="stylesheet" href="CSS/admin-styles.css"> 
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <img src="img/Logo_Đại_học_Y_Dược_Cần_Thơ.gif" alt="Logo" class="logo">
+        <span class="text"><h2>Trường Đại Học Y Dược Cần Thơ - Phòng Công Tác Sinh Viên</h2></span>
+        <button id="logoutButton">Đăng Xuất</button>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="sidebar">
+      <h3>Trang Chủ</h3>
+      <a href="#" id="manageQuestionsLink">Quản lý câu hỏi</a> 
+      <div class="tabs">
+        <button id="uncategorizedTab" class="active">Chưa chuyển</button>
+        <button id="categorizedTab">Đã chuyển</button>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm...">
+        <button id="searchButton">Tìm kiếm</button>
+        <button id="clearSearchButton">Làm rỗng</button>
+        <button id="updateButton">Cập nhật câu trả lời</button>
+      </div>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Mã câu hỏi</th>
+            <th>Câu hỏi</th>
+            <th>Bộ phận</th> 
+            <th>Chủ đề</th> 
+            <th>Email</th>
+            <th>Chức năng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table body content goes here -->
+        </tbody>        
+      </table>
+    </div>
+  </div>
+
+  <script src="Javascripts/admin-script.js" type="module"></script>
+</body>
+</html>

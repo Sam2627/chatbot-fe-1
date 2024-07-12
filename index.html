@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Trường Đại Học Y Dược Cần Thơ</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img src="img/Logo_Đại_học_Y_Dược_Cần_Thơ.gif" alt="Logo" class="logo">
+      <span class="text"><h2>Trường Đại Học Y Dược Cần Thơ</h2></span>
+    </div>
+
+    <div id="google_translate_element"></div> 
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </header>
+
+  <section id="home" class="hero-section">
+      <h1>Hệ Thống Đối Thoại Trường Đại Học Y Dược Cần Thơ</h1>
+      <i>Trách nhiệm - Chất lượng - Phát triển - Hội nhập</i>
+      <br><br>
+    
+      <div class="chat-container"> 
+      <button id="askUsButton">Bắt đầu ngay</button>
+      Hoặc
+      <button id="loginButton" class="login-button">Đăng nhập</button>
+        <div id="chatBox" class="hidden">
+          <div id="chatHeader">
+            <span>Chat Bot</span>
+            <button id="closeChatBox">X</button>
+          </div>
+          <div id="chatBody">
+            <div id="chatbox"></div>
+            <div id="similarQuestions" class="hidden similar-questions-container">
+              <h4>Câu hỏi gợi ý:</h4>
+              <button id="clearSimilarQuestionsButton">Xóa</button>
+              <ul id="similarQuestionsList"></ul>
+            </div>
+          </div>
+          <div id="chatInputContainer">
+            <input id="userInput" type="text" placeholder="Nhập câu hỏi?">
+            <button id="toggleButton"><i style="font-size:15px; gap:10px" class="fa"></i></button>
+            <button id="clearButton" class="icon-button"><i class="fa fa-trash"></i></button>
+            <button id="sendButton" class="icon-button"><i class="fa fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    </section>
+
+  <footer>
+      <img src="img/Logo_Đại_học_Y_Dược_Cần_Thơ.gif" alt="CTUMP Logo" class="logo">
+      <div class="title">
+          <h1>Trường Đại Học Y Dược Cần Thơ (Can Tho University of Medicine and Pharmacy)</h1>
+          <p>
+              Số 179, đường Nguyễn Văn Cừ, P. An Khánh, Q. Ninh Kiều, TP. Cần Thơ.<br>
+              Điện thoại: (84-0292) 3 739 730 (Phòng Hành chánh tổng hợp).<br>
+              Fax: (84-0292) 3 740221 ; Email: ctump@ctump.edu.vn<br>
+          </p>
+      </div>
+  </footer>
+
+  <script src="Javascripts/script.js" type="module"></script>
+  <script src="Javascripts/voice.js" type="module"></script>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  
+
+</body>
+</html>
